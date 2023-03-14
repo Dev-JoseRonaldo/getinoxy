@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .clip-path-hero {
+    clip-path: polygon(100% 0, 100% 100%, 0 79%, 0 0);
+  }
+  .clip-path-contact {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 36%);
+  }
+
+  @media (max-width: 640px) {
+    .clip-path-hero {
+      clip-path: polygon(100% 0, 100% 100%, 0 89%, 0 0);
+    }
+
+    .clip-path-contact {
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 20%);
+    }
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.875rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e1f0fc;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #142560;
+  border-radius: 15px;
+}

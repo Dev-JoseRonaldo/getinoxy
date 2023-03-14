@@ -1,0 +1,1 @@
+export const HeroContainerStyles = ` bg-heroMobile lg:bg-hero  h-[400px] xs:h-[500px] sm:h-[700px] md:h-[850px] w-full bg-no-repeat bg-right-top bg-cover mt-[-23px] md:mt-[-27px] lg:mt-[-30px] clip-path-hero`
